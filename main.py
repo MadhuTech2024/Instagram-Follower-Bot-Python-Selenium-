@@ -31,7 +31,7 @@ class InstaFollower:
 
     def find_followers(self, account):
         # Go to target account page
-        self.driver.get(f"https://www.instagram.com/chefsteps/")
+        self.driver.get(f"https://www.instagram.com/{account}/")
         time.sleep(3)
 
         # Click followers link
@@ -59,7 +59,7 @@ class InstaFollower:
 # ---------- RUNNING THE BOT ----------
 USERNAME = os.getenv("INSTA_USERNAME")  # Load from .env or replace with your username
 PASSWORD = os.getenv("INSTA_PASSWORD")  # Load from .env or replace with your password
-TARGET_ACCOUNT = "target_account_name"
+TARGET_ACCOUNT = "chefsteps"
 
 bot = InstaFollower()
 bot.login(USERNAME, PASSWORD)
