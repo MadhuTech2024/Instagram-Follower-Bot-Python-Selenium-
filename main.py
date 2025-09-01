@@ -59,7 +59,7 @@ class InstaFollower:
 # ---------- RUNNING THE BOT ----------
 USERNAME = os.getenv("INSTA_USERNAME")  # Load from .env or replace with your username
 PASSWORD = os.getenv("INSTA_PASSWORD")  # Load from .env or replace with your password
-TARGET_ACCOUNT = "chefsteps"
+TARGET_ACCOUNT = "target_account_name"
 
 bot = InstaFollower()
 bot.login(USERNAME, PASSWORD)
